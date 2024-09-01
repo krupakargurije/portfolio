@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    color: black;
+    scroll-behavior: smooth;
+}
+.repeat_text{
+    color: rgb(7, 138, 190);
+}
+.logo-1{
+    position: unset;
+    padding: 30px;
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo-1{
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: .9s;
+}
+@keyframes slideTop{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.header{
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navbar a{
+    right: 50px;
+    padding: 50px;
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    word-spacing: 50px;
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 10px;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+@keyframes slideTop{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 2;
+    }
+}
+.navbar a::after{
+    margin-top: 2px;
+    content: '';
+    margin-left: 8px;
+    display: block;
+    position: absolute;
+    width: 85%;
+    height: 4px;
+    left: 0;
+    background-color: black;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .4s;
+
+}
+.navbar a:hover::after{
+    transform: scale(1);
+    border-radius: 10px;
+
+}
+
+.home{
+    position: relative;
+    justify-content: space-between;
+    height: 100vh;
+    color: black;
+    background: url(pic5.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+.home-content{
+    height: 200px;
+    font-weight: 700;
+    padding: 50px;
+    max-width: 600px;
+    align-items: center;
+    margin-top: 300px;
+    color: black;
+    justify-content: space-between;
+    opacity: 0;
+    animation: slideBottom .5s ease forwards;
+    animation-delay: .7s;
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.name{
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: .9s;
+}
+@keyframes slideTop{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.name h3{
+    opacity: 0;
+    animation: slideRight .5s ease forwards;
+    animation-delay: .6s;
+}
+.name h3{
+    opacity: 0;
+    animation: slideRight .5s ease forwards;
+    animation-delay: .6s;
+}
+.home-sci a{
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid cyan;
+    text-decoration: none;
+    margin: 30px 35px 30px 0;
+}
+.home-sci a:hover{
+    color: black;
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.btn-box{
+    font-weight: 700;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 60px;
+    background: transparent;
+    border-radius: 40px;
+    height: 35px;
+    width: 207px;
+    background-color: cyan;
+    align-items: center;
+}
+.btn-box:hover{
+    color: black;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.text{
+    color: cyan;
+    font-size: 20px;
+}   
+
+
+/* extra */
+.about-img{
+    background-position: cover;
+}
+.about-page{
+    position: relative;
+    justify-content: space-between;
+    height: 100vh;
+    background: white;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+.about-content{
+    padding: 50px;
+    height: 750px;
+}
+.text{
+    color: black;
+}
+.logo-2{
+    color: black;
+    opacity: 0;
+    animation: slideTop .3s ease forwards;
+    animation-delay: .2s;
+}
+@keyframes slideTop{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.about-text{
+    color: black;
+    opacity: 0;
+    animation: slideTop .3s ease forwards;
+    animation-delay: .2s;
+}
+@keyframes slideTop{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.logo-3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 0;
+    margin-left: 550px;
+    position: absolute;
+    font-weight: 700;
+    padding: 50px;
+    max-width: 600px;
+    color: black;
+    justify-content: space-between;
+}
+.about-content{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 20;
+    margin-bottom: 100px;
+    margin-left: 550px;
+    position: flex;
+    max-width: 600px;
+    color: black;
+    justify-content: space-between;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.container {
+    height: 775px;
+    margin: auto;
+    padding: 30px;
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.skill {
+    flex: 1 1 calc(25% - 20px);
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.skill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+.skill:hover::before {
+    opacity: 1;
+}
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+.skill i {
+    font-size: 60px;
+    color: blue;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+.skill:hover i {
+    transform: scale(1.2);
+    color: #0056b3;
+}
+.skill h2 {
+    margin: 0;
+    color: #34495e;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.skill p {
+    margin: 10px 0 0;
+    color: black;
+    font-size: 1em;
+}
+
+body, h1, p, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-contact {
+    position: flex;
+    margin-top: 110px;
+    margin-bottom: 70px;
+    padding-bottom: 40px;
+    margin-left: 450px;
+    width: 90%;
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: scaleUp 0.5s ease-out;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+    color: #2196f3;
+    animation: slideInFromTop 1s ease-out;
+}
+
+p {
+    margin-bottom: 1em;
+    color: #555;
+    font-size: 1.2em;
+    animation: fadeIn 1s 0.5s ease-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    animation: fadeIn 1s 1s ease-out;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #2196f3;
+    outline: none;
+    box-shadow: 0 0 8px rgba(33, 150, 243, 0.5);
+}
+
+form button {
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    padding: 0.75em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: pulse 1s infinite;
+}
+
+form button:hover {
+    background: #1976d2;
+    transform: scale(1.05);
+}
+
+.social-media {
+    margin-top: 2em;
+}
+
+.social-media a {
+    color: #2196f3;
+    font-size: 2em;
+    margin: 0 1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1s 1.5s ease-out;
+}
+
+.social-media a:hover {
+    color: #1976d2;
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+    </style>
+    <header class="header">
+        <a class="logo-1">PORTFOLIO</a>
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="#about-page">ABOUT</a>
+            <a href="#my-skills">SKILLS</a>
+            <a href="#contact-page">CONTACT</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h2 class="name">KRUPAKAR GURIJE</h2>
+            <h3>And I'am a <span class="repeat_text">
+                <script>
+                var typed = new Typed(".repeat_text", {
+                    strings:["FULL STACK DEVELOPER","ANDROID DEVELOPER","STUDENT"],
+                    typeSpeed:100,
+                    backSpeed:100,
+                    backDelay:1000,
+                    loop:true
+                });
+            </script>
+            </span></h3>
+            <p>I'm a second year student in hyderabad...
+            </p>
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/gurije-krupakar-234423292/"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/krupakargurije"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/mr_nobita_a_good_clone?igsh=MzNlNGNkZWQ4Mg=="><i class="bx bxl-instagram"></i></a>
+            </div>
+            <a href="#about-page" class="btn-box">ABOUT ME</a>
+        </div>
+        <span class="home-img" id="about"></span>
+    </section>
+
+    <section id="about-page">
+        <div class="about-content" >
+            <h2 class="logo-2">ABOUT ME</h2>
+            <br>
+                <p class="text">I am a student at ACE engineering college hyderabad..
+                    <li class="about-text">
+                        Hello! I'm Krupakar Gurije, 
+                        a passionate student and aspiring developer with a 
+                        focus on creating dynamic and user-friendly digital experiences. 
+                        As a dedicated website and Android developer, 
+                        I specialize in designing and building responsive, 
+                        functional applications and websites that meet modern standards and user expectations.
+                        <p>
+                            <h2>What I Do
+                                <h4>Website Development </h4>
+                            <li class="about-text">
+                                 I craft engaging and responsive websites using the 
+                                latest web technologies including HTML, CSS, JavaScript, 
+                                and frameworks such as React and Angular.
+                                 My goal is to ensure that every website 
+                                 I develop is not only visually appealing but also 
+                                 highly functional and user-centric
+                            </li>
+                            <h4>Android Development</h4>
+                            <li class="about-text">
+                                 I build intuitive and efficient Android 
+                                applications with a keen eye for detail and user experience. 
+                                Utilizing tools like Kotlin and Android Studio, 
+                                I aim to deliver smooth and reliable apps that meet users' 
+                                needs and expectations.
+                            </li>
+                            </h2> 
+                        </p>
+                    </li>
+                </p>
+            </p>
+        </div>
+    </section>
+    <section id="my-skills">
+        <div class="container">
+            <h1>MY SKILLS</h1>
+            <div class="skills">
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                    <p>Experienced in creating semantic and accessible web pages.</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                    <p>Skilled in styling and responsive design, using Flexbox and Grid.</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h2>Bootstrap</h2>
+                    <p>Beginner in Bootstrap framework</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>Proficient in scripting and interactive features with modern frameworks.</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-c"></i>
+                    <h2>C</h2>
+                    <p>Strong foundation in system programming and memory management.</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-cuttlefish"></i>
+                    <h2>C++</h2>
+                    <p>Experienced in object-oriented programming and complex algorithms.</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                    <p>Familiar with enterprise-level applications and object-oriented principles.</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-dart-lang"></i>
+                    <h2>Dart</h2>
+                    <p>Familiar with enterprise-level applications</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-flutter"></i>
+                    <h2>Flutter</h2>
+                    <p>Beginner but Familiar with enterprise-level applications</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Intermediate Python Nanodegree program</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-page">
+        <div class="container-contact">
+            <h1>Contact Me</h1>
+            <p>I'd love to hear from you! Please fill out the form below or reach out via social media.</p>
+            <form action="https://formspree.io/f/yourformid" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-media">
+                <a href="https://www.facebook.com/krupakar.gurija.1?mibextid=ZbWKwL" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/gurije-krupakar-234423292/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/mr_nobita_a_good_clone?igsh=MzNlNGNkZWQ4Mg==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
